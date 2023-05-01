@@ -1,11 +1,40 @@
-<DOCTYPE! html>
+<DOCTYPE html>
+<html>
+
 <head>
-	<title>Test</title>
-<head>
+	<title>Title</title>
+<style>
+	#myText{
+	color:aqua;
+	}
+</style>
+</head>
 <body>
-	<h1>Welcome to my WebPage</h1>
-	<p>This is written entirely in linux Vim</p>
-	<button>Click me!!</button>
-	<h1>This is a test</h1>
+	<h1>Changing styles with the DOM</h1>
+	<h2 id="myText">Change this text</h2>
+	<button onClick="changeColor()">Change colour of h2</button>
+	<button onClick="changeFontSize()">Change font size of h2</button>
+	<button onClick="changeFontStyle()">Change font style of h2</button>
+
+<script>
+	function changeColor(){
+	document.getElementById("myText").style.color="red";
+	}
+	function changeFontSize(){
+	document.getElementById("myText").style.fontSize="xx-large";
+	}
+	function changeFontStyle(){
+	document.getElementById("myText").style.fontStyle="italic";
+	}
+</script>
 </body>
+</html>
+
+
+
+
+
+
+
+
 
